@@ -1,0 +1,22 @@
+import PackageDescription
+
+let package = Package(
+    name: "JWPlayerKit",
+    platforms: [
+        .iOS(.v10)
+    ],
+    products: [
+        .library(
+            name: "JWPlayerKit",
+            targets: ["JWPlayerKit"]
+        ),
+    ],
+    targets: [
+        .binaryTarget(
+            name: "JWPlayerKit",
+            path: "JWPlayerKit.xcframework"
+        ),
+    ],
+    
+    swiftLanguageVersions: [.v5]
+)
