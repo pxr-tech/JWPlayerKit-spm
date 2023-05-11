@@ -1,3 +1,4 @@
+// swift-tools-version:5.3
 import PackageDescription
 
 let package = Package(
@@ -9,13 +10,13 @@ let package = Package(
         .library(
             name: "JWPlayerKit",
             targets: ["JWPlayerKit"]
-        ),
+        )
     ],
     targets: [
         .binaryTarget(
             name: "JWPlayerKit",
             path: "JWPlayerKit.xcframework"
-        ),
+        )
     ],
     
     swiftLanguageVersions: [.v5]
